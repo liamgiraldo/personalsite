@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+body {
+    margin: 0;
+    background: #f5f5f5;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.lightred{
+    color: #ff5c5c;
+}
+
+.override{
+    height: auto !important;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    max-width: 700px;
+    gap: 40px;
+}
+.content img {
+    border-radius: 50%;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    max-width: 225px;
+}
+.maintext {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    justify-content: center;
+}
+.maintext p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.maintext h1 {
+    margin-top: 0;
+}
+.mainbuttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    gap: 15px;
+}
+.mainbuttons a {
+    text-decoration: none;
+    color: #398CBF !important;
+    transition: all .2s ease;
+}
+
+.chill{
+    text-decoration: none;
+    color: #398CBF;
+    transition: all .2s ease;
+}
+
+.chill:hover{
+    color: #1F598C !important;
+    text-decoration: none;
+}
+
+
+
+.mainbuttons a:hover {
+    color: #1F598C !important;
+    text-decoration: none;
+}
+
+.email{
+    background-color:snow;
+    color:rgb(10, 10, 10);
+    box-shadow: 0px 1px 7px 0px rgba(0,0,0,0.75);
+    padding: 5px;
+    border-radius: 10px;
+    margin: auto;
+    position: absolute;
+    margin-top: 10px;
+    display: none;
+}
+
+.emailbutton:hover + .email{
+    display: block;
+}
+
+@media (max-width: 750px){
+
+    .content {
+        flex-direction: column;
+        margin: 69px;
+    }
+
+    .content img {
+        margin: auto;
+    } 
+    .mainbuttons{
+        gap: 13px;
+    }
+}
