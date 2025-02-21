@@ -13,6 +13,9 @@ body {
     justify-content: center;
     height: 100vh;
 }
+.lightred{
+    color: #ff5c5c;
+}
 
 .override{
     height: auto !important;
@@ -86,6 +89,7 @@ body {
 .emailbutton:hover + .email{
     display: block;
 }
+
 @media (max-width: 750px){
 
     .content {
